@@ -24,3 +24,9 @@
   <li class="list-group-item" *ngSwitchCase="10">É IGUAL A 10</li>
   <li class="list-group-item" *ngSwitchDefault>É O DEFAULT</li>
 </ul>
+
+<ul *ngFor="let pessoa of pessoas" class="list-group mx-auto my-3 col-3">
+  <li class="list-group-item">
+    O nome da pessoa é: {{ pessoa.nome }} {{ pessoa.sobrenome }}
+  </li>
+</ul>

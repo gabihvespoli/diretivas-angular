@@ -14,7 +14,7 @@ export class AppComponent {
       sobrenome: 'Vespoli',
     },
     {
-      nome: 'Gabielle',
+      nome: 'Gabrielle',
       sobrenome: 'Vespoli',
     },
     {
@@ -30,7 +30,7 @@ export class AppComponent {
   constructor() {}
 
   ngOnInit() {
-    this.pessoas;
+    console.log(this.pessoas);
     let interval = setInterval(() => {
       this.count++;
       if (this.count === 10) {
