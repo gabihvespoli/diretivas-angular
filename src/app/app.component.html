@@ -9,7 +9,7 @@
   <h2 class="text-center">Contador: {{ count }}</h2>
 </div>
 
-<!-- Diretiva estrutural -->
+<!-- Diretivas estruturais -->
 
 <h2 *ngIf="count > 7; else menor">O contador passou de 7!</h2>
 
@@ -30,3 +30,9 @@
     O nome da pessoa é: {{ pessoa.nome }} {{ pessoa.sobrenome }}
   </li>
 </ul>
+
+<h3>{{ nome }}</h3>
+
+<button class="btn btn-primary col-4 mx-auto" (click)="clicou('Vespoli')">
+  Clique
+</button>

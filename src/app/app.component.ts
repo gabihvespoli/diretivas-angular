@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   count = 0;
+  nome = 'Gaaaaabi';
 
   pessoas = [
     {
@@ -37,5 +38,9 @@ export class AppComponent {
         clearInterval(interval);
       }
     }, 1000);
+  }
+
+  clicou(nome: string): void {
+    console.log('Clicou', nome);
   }
 }
