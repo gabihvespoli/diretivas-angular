@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   count = 0;
   nome = 'Gaaaaabi';
+  text = '';
 
   pessoas = [
     {
@@ -40,7 +41,7 @@ export class AppComponent {
     }, 1000);
   }
 
-  clicou(nome: string): void {
-    console.log('Clicou', nome);
+  clicou(msg: string): void {
+    console.log('Clicou', msg);
   }
 }
